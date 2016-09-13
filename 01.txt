@@ -1,3 +1,49 @@
--Distinguiendo y justificando sistemas
+*Distinguiendo y justificando sistemas*
 
-La identificacion del sistema es el resultado de un proceso de distincion influenciado por la capacidad del observador de distinguir cosas
+	La identificacion del sistema es el resultado de un proceso de distincion influenciado por la capacidad del observador de distinguir cosas.
+	Por justificacion se entiende que el sistema identificado cumple determinados conceptos que lo caracterizan por ejemplo: finalidad, objetivo, retroalimentacion etc.
+
+
+-La justificacion de un sistema 
+
+	Objetivo:
+		Un sistema se justifica cuando se le ha asignado la capacidad de tener un objetivo, pero hay que tener en cuenta que siempre el objetivo es asignado  por el observador
+			-Se dice que un sistema posee un objetivo asignado externamente por un observador cuando se desconoce o no se comprende cual es su finalidad  y es dicho observador quien entiende y establece cual "podria" ser su objetivo.
+			Este observador debe ser cuidadoso al asignar el objetivo ya que un observador con poca experiencia, podria comprender un sistema y su objetivo desde un limitado campo de vision o de opciones.
+
+	Frontera:
+		Las fronteras e un sistema son las que delimitan "lo que esta dentro y fuera del sistema", para saber que esta dentro y que esta afuera hay que hacer 2 preguntas
+			*¿que debe controlar el sistema?
+			*¿que puede controlar el sistema?
+		-Esta dentro del sistema todo aquello que debe y puede controlar el sistema
+
+		-Esta fuera todo aquello que no debe y no puede controlar el sistema y pasa a ser parte del entorno o medio externo al sistema.
+
+		-Estara en la frontera todo aquello que debe controlar pero no puede controlar y por lo tanto debe influir para procurar hacerlo con interacciones de salida hacia el entorno que es donde se encuentran esos elementos que deben controlarse.
+
+		-Estara en la frontera todo aquello que no debe controlar pero que si controla, en estos casos de debe evaluar si se debe dejar dentro o fuera del sistema, pues los elementos involucrados pueden ser parte de "otro sistema".
+
+
+	Interacciones:
+		Si "ver" el sistema es complejo, el ver las interacciones lo es mas.
+		El sistema es definido por un observador o modelador. Puede que exista antes de que el modelador observe la realidad o no. En este momento, cuando se define o se identifica el sistema es cuando el modelador debe distinguir suspartes,las interacciones entre estas partes y las interacciones de las partes con el entorno.	Pero esto lo hace a un nivel abstracto, basado en los conceptos que le permiten identifiacr partes e interacciones.
+		Es decir en este nivel de observacion el sistema es una concepcion mental.Nada mas.
+
+-Interaciones entre sistemas y estructuras
+		...
+		...
+		...
+
+
+*Productos informaticos en un contexto organizacional*
+	Un producto informatico alude a un conjunto de componentes de diversos tipos:
+		Un software que responde a una necesidad, un hardware donde opera el software, personas que operan el software y hardware.
+	Todos estos elementos, cuya mision es tratar la informacion (tomar deciciones,procesar datos,etc), y ademas son los elementos disponibles para dar forma al sistemas.
+	Aqui surge el real conflicto, construir un sistema a nivel abstracto y conceptual para luego construir materialmente una estructura que sea bien recibida por la estructura de otros sistemas relacionados y con la estructura del propio entorno.
+	En una empresa, el  producto informatico debe insertarse estructuralmente en la estructura de la empresa.
+
+
+
+
+
+		
