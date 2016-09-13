@@ -42,8 +42,16 @@
 	Aqui surge el real conflicto, construir un sistema a nivel abstracto y conceptual para luego construir materialmente una estructura que sea bien recibida por la estructura de otros sistemas relacionados y con la estructura del propio entorno.
 	En una empresa, el  producto informatico debe insertarse estructuralmente en la estructura de la empresa.
 
+-La insercion estructural
+	Parte del modelado es estudiar la capacidad de que el producto informatico sea aceptado admitido y asimilado por una organizacion.No es raro ecuchar de sistemas rechazados o pobremente usados por motivos que no son tecnicos sino por "feeling" al software.
+	Es mision del modelador preveer esta circunstancia, por lo cual el modelado demanda una comprension organizacional muy clara tanto a nivel procesos como a nivel personas.
+	Por lo tanto se debe considerar todos los componentes sistemicos en forma de funciones y tareas a cumplir y proveer, sabiendo que habra interaccion con un medio que no espera siempre "con buenos ojos" un nuevo actor organizacional(el sistema).
+	Las funciones y tareas que se hayan previsto se realicen de manera abstracta(en papel), asi aparecen actores y agentes (personas) que deben entrenarse, seleccionarse o eliminarse para que el sistema funcione y que sea aceptado.
+	El analista debe concebir un sistema integrado a una realidad organizacional que no debe dañar sino hacerla mejor y al mismo tiempo el diseñador se preocupa de que todo encaje con los recursos existentes.
 
-
+-La de-construccion organizacional
+	Todo producto informatico desde el momento en que se concibe altera la organizacion receptora. Por este motivo el analista que realiza un alaisis de situacion actual debe ser cuidadoso para no descubrir  cuando termina su estudio que la organizacion no es la misma o que asimilo cosas derivadas del estudio.
+	
 
 
 		
