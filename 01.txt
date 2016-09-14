@@ -51,7 +51,18 @@
 
 -La de-construccion organizacional
 	Todo producto informatico desde el momento en que se concibe altera la organizacion receptora. Por este motivo el analista que realiza un alaisis de situacion actual debe ser cuidadoso para no descubrir  cuando termina su estudio que la organizacion no es la misma o que asimilo cosas derivadas del estudio.
-	
+	En todo este proceso los conceptos se re-hacen producto de nuevas visiones, las concepciones del trabajo como se hace cambia conforme aparecen nuevas formas de trabajo mas automatizadas, las personas ven variar su entorno y por ende su concepcion de la organizacion y sus metodos de trabajo.Todo esto se conoce como deconstrucion, que surge porque los conceptos varian gracias al desarrollo del producto informatico desde sus faces de analisis y diseño.
 
 
-		
+
+-LA ULTIMA PALABRA LA TIENE EL USUARIO
+	-Se dice que cualquier esfuerzo de analisar y diseñar no sirve de nada si el usuario no acepta el producto
+	Hay que ser cuidadoso pues el analisis involucra pensar en las personas que trabajaran y se veran afectadas por el producto informatico. Este usuario de debe ver como una figura que "nada sabe" y ademas de manera natural precisa ser entrenado en una nueva herramienta que muchas veces no espera ni desea.
+	Los usuarios pueden ser divididos en 2 tipos 
+		-Los usuarios , que como tal usan el artefacto o sistema, aportando y/o recibiendo datos, pero que desconoce ni le preocupa como funciona dicho sistema.
+		-Los operadores, que permiten que el sistema opere de manera normal y revisan el comportamiento del mismo a nivel de:
+			-sus variables de operacion( que miden su rendimiento, tiempos de respuesta, comportamiento, etc)
+			-sus variables funcionales (que miden la capacidad de atender y satisfacer los requerimientos que justifican el sistema)
+			-sus variables estrategicas (que analizan la existencia del sistema dentro de los procesosestrategicos de la empresa)
+
+		Por ultimo esta el cliente que es quien financia el desarrollo puede ser usuario, operador  o no ocupar posicion alguna.
