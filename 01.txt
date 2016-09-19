@@ -1,3 +1,4 @@
+1.1
 *Distinguiendo y justificando sistemas*
 
 	La identificacion del sistema es el resultado de un proceso de distincion influenciado por la capacidad del observador de distinguir cosas.
@@ -66,3 +67,77 @@
 			-sus variables estrategicas (que analizan la existencia del sistema dentro de los procesosestrategicos de la empresa)
 
 		Por ultimo esta el cliente que es quien financia el desarrollo puede ser usuario, operador  o no ocupar posicion alguna.
+
+
+1.2 Analisis de sistemas y formas de modelamiento
+**El analisis y el diseño en los modelos de desarrollo
+
+Dentro de la ingenieria de software existen varios paradigmas para poder llegar a la contruccion final del producto, a esa serie de procedimientos y etapas se le denomina ciclo de vida.Este ciclo consiste en la concepcion, construccion, implementacion, y aplicacion del producto.
+Estos paradigmas surgidos a finales de los años 60 e inicios de los 70, tambien llamados modelos de ciclo de vida del software,  son hoy el marco de referencia mas usado para describir el proceso de desarrollo de un proyecto informatico, describen los pasos a seguir, los puntos de terminacion, los subproductos a entregar y las fases a seguir.
+
+Lo que se persigue con estos paradigmas es que el producto o solucion sea: 
+	-Comprensible, claro y bien definido en sus detalles y en el trabajo realizado.
+	-Bien construido
+	-Robusto, en el sentido que puede seguir operando bajo condiciones de fallo o error.
+	-Mantenible, o que se pueda ajustar a cambios futuros con facilidad 
+
+La eleccion de la forma de desarrollo tiene un efecto significativo en el exito del proyecto. El paradigma es un proceso cuya adecuacion puede conducir a que el sistema se complete rapidamente, con un costo reducido, mayor calidad  y menor riesgo. Un proceso inadecuado conduce a esfuerzos de trabajo duplicados, problemas en la programacion y problemas de gestion.
+
+A continuacion se describen los paradigmas mas representativos.
+
+***Cascada o Tradicional***
+
+Es el mas comun y se puede considerar el mas basico de todos los modelos de ciclo de vida, lo cual lo convierte en base para otros modelos.
+Fue originalmente documentado en el año 1970, lo que lo convierte en el paradigma de ingenieria mas antiguo.
+Este modelo expone que el desarrollo de software puede verse como una secuencia simple de fases encadenadas linealmente.
+	-Especificacion de requerimientos
+	-Planificacion
+	-Moodelamiento
+	-Construccion y desarrollo
+	-Soporte (mantenimiento) del software completo
+
+Estas fases en ocasiones cambian de nombre, pueden cambiar de orden o simplemente aparecer dentro de otras.No obstante, las fases indicadas siempre estan presentes y el modelo no pierde su linealidad ni su secuencia en las etapas o fases que se desea destacar.
+En cada fase de debe realizar un proceso de verificacion y validacion
+	Validacion: ¿estamos construyendo correctamente el producto?
+	Verificacion: ¿estamos construyendo el producto correcto?
+
+En este paradigma se utilizan las siguientes etapas:
+	a)Ingenieria y Analisis del Sistema. Debido a que el software es parte de un sistema mayor el trabajo comienza estableciendo los requisitos de todos los elementos del sistema y luego asignando algun subconjunto de estos requisitos al software.
+
+	b)Analisis de los requisitos del software. El proceso de recopilacion de los requisitos se centra en el software. El analista debe comprender el ambito de la informacion del software, asi como la funcion del mismo, el rendimiento y las interfaces requeridas.
+
+	c)Diseño. El diseño del se enfoca en 4 atributos distintos: El diseño de los datos, la arquitectura de software, el detalle procedimental y la caracterizacion de la interfaz. 
+	El diseño traduce los requisitos en una representacion del software con la calidad requerida antes de que comience la codificacion.
+
+	d)Prueba. Una vez que se ha generado el codigo comienza la prueba, que se centra en la logica interna del software y en las funciones esternas, realizando pruebas que aseguren que la entrada definida produce los resultados que realmente se requieren.
+
+	e)Mantenimiento. El software sufrira cambios despues de que se entrgue al cliente. Los cambios ocurriran debidi a que se hayan encontrado errores, a que el software deba adaptarse a cambios del entorno o debido a que el cliente lo requiera.
+
+Caracteristicas y factores de decision
+	Este paradigma funciona cuando los requerimientos del problema son razonables y bien comprendidos y el riesgo de inestabilidad es bajo. Aunque ultimamente se ha cuestionado la eficiencia del modelo en cascada, algunas de las razones son las siguientes:
+		-Los proyectos reales raramente siguen un orden secuencial
+		-Es dificil lograr que el cliente otorgue requerimientos explicitos a alto nivel
+		-Se produce un caos cuando un error grave es detectado en una etapa muy avanzada del proyecto
+		-El cliente debe ser paciente y esperar a ver el resultado final del proceso.
+
+	Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+	Caracteristicas:
+		-Cada fase empieza cuando se ha terminado la anterior
+		-Para pasar a la fase posterior es necesario haber logrado los objetivos de la previa
+		-Es util como control de fechas de entregas
+		-Al final de cada fase el personal tecnico y los usuarios pueden revisar el progreso
+
+	Factores de Decision
+		-Todos los requerimientos son conocidos al proncipio
+		-Solo se desarrolla lo que se conoce bien
+		-Los usuarios lo pruebas y añaden requerimientos
+		-La aplicacion se hace por fases
+		-Se hace una implementacion parcial y se prueba
+		-Se utiliza en sistemas de complejidad baja
+
+
+***PARADIGMAS DE DESARROLLO INCREMENTALES***
+
+En situaciones en las que los requerimientos entan bien definidos, pero segun el alcance del proyecto existe la posibilidad de que el desarrollo no sea lineal, se provee de un paradigma que esta diseñado para producir software por incrementos. Para ello limitan la funcionalidad del software para que pueda ser revisado por el cliente y que este a su vez lo refine para tenerlo listo en la siguiente etapa del proyecto.
+
+***Paradigma incremental***
