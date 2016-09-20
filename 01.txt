@@ -141,3 +141,124 @@ Caracteristicas y factores de decision
 En situaciones en las que los requerimientos entan bien definidos, pero segun el alcance del proyecto existe la posibilidad de que el desarrollo no sea lineal, se provee de un paradigma que esta diseñado para producir software por incrementos. Para ello limitan la funcionalidad del software para que pueda ser revisado por el cliente y que este a su vez lo refine para tenerlo listo en la siguiente etapa del proyecto.
 
 ***Paradigma incremental***
+
+En este paradigma el desarrollo se organiza en una serie de etapas, teniendo al final de cada etapa una version funcional y usable, con funcionalidades añadidas respecto al anterior incremento.
+Para cada una de estas versiones se realiza en cada incremento una revision del analisis anterior, un diseño o revision del diseño existentes, la codificacion necesaria y las pruebas de las nuevas funcionalidades. De esta forma cada version cumple uno o mas requisitos que la version anterior y el numero de requisitos por cumplir se va reduciendo.
+Cada version se usa como base para la siguiente version, teniendo en cuenta la retroalimentacion recibida por el cliente.
+El paradigma incremental combina elementos del paradigma de cascada, aplicandolo de forma iterativa.Aplica secuencias lineales a mode de fases.Cada secuencia produce incrementos entregables del software
+Las etapas del paradigma incremental son
+	-Ingenieria y Analisis del Sistema
+	-Analisis de los requerimientos
+	-Diseño
+	-Codificacion
+	-Pruebas
+	-Mantenimiento
+
+*Caracteristicas y factores de decision*
+Este paradigma es particularmente util cuando el personal no esta disponible para hacer una implementacion completa para la fecha acordada con el cliente.Los incrementos de etapa temprana pueden ser ejecutados por una menor cantidad de personas.
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+	Caracteristicas:
+		-Se desarrolla el sistema por partes, incrementandolas y juntandolas despues
+		-Los errores producidos en un incremento son solucionados para el siguiente incremento
+		-Se involucra mas al usuario
+		-Se basa en el modelo cascada
+		-Se van añadiendo funcionalidades
+
+	Factores de decision
+		-Se debe tener claro algunos de los requerimientos al principio
+		-Es menos arriesgado un sistema pequeño que uno grande
+		-Dificil evaluar el costo total
+		-Los errores en los requisitos se detectan tarde
+
+***Paradigma RAD(Diseño Rapido de Aplicaciones)***
+Es una adaptacion a alta velocidad del paradigma en cascada, en el que se enfatiza en un ciclo de vida extremadamente corto.
+Las etapas del paradigma RAD son:
+	-Modelado de Gestion
+		El flujo de informacion entre las funciones de gestion que se modela de modo que responda a las siguientes preguntas:
+			-¿Que informacion conduce el proceso de gestion?
+			-¿Que informacion se genera?
+			-¿Quien la genera?
+			-¿A donde va la informacion?
+			-¿Quien la procesa?
+
+	-Modelado de Datos
+		El flujo de informacion definido en la fase anterior se refina como un conjunto de objetos de datos necesarios.Se definen las caracteristicas de cada uno de los objetos y las relaciones entre estos
+
+	-Modelado de Procesos
+		Los objetos de definidos en la fase anterior se transforman para lograr el flujo de informacion necesario para implementar una funcion de gestion.Las descripciones del proceso se crean para añadir, modificar, suprimir o recuperar objetos de datos.
+
+	-Generacion de Aplicaciones
+		RAD asume que en lugar de crear el software con lenguajes de programacion se usan componentes de programas ya existentes cuando es posible o se crean componentes reutilizables cuando es necesario.En todos los casos se utilizan herramientas automaticas para facilitar la construccion del software.
+
+	-Prueba y entrega
+		Como el proceso de RAD enfatiza en la reutilizacion, ya se han comprobado muchis de los componentes de los programas.Esto reduce el tiempo de pruebas.Sin embargo se deben probar todos los componentes nuevos.
+
+*Caracteristicas y factores de decision*
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+	Caracteristicas
+		-El desarrollo del sistema completamente funcional se da en periodos cortos
+		-Se utiliza un enfoque de construccion basado en objetos reusables
+
+	Factores de decision
+		-Se requiere comprender bien los requisitos y el ambito del proyecto
+		-Necesita que el cliente y el desarrollador se comprometan en las actividades necesarias para completar un sistema en tiempo corto
+
+No es adecuado en entornos tecnologicos nuevos o entornos que requieran interoperatividad con aplicaciones existentes pues no se dejara tiempo suficiente para pruebas de integracion.
+
+
+
+***PARADIGMAS DE DESARROLLO EVOLUTIVOS***
+
+Se sabe de antemano que el software al igual que todos los sistemas complejos evoluciona con el tiempo. Los paradigmas evolutivos se caracterizan por desarrollar versiones cada vez mas completas del software
+
+***Paradigma de construccion de prototipos***
+
+Este paradigma añade al final de cada evolucion una etapa de retroalimentacion con el cliente, para evaluar el resultado. Al final de cada fase es necesario descartar el prototipo anterior y comenzar de nuevo.
+El uso de este paradigma se centra en la idea de ayudar a comprender los requisitos que plantea el usuario, sobre todo si este no tiene una idea muy clara de lo que desea.Tambien puede utilizarse cuando el ingeniero de software tiene dudas acerca de la viabilidad de la solucion pensada.
+La version temprana de lo que sera el producto, con una funcionalidad reducida, podra incrementarse paulatinamente a traves de refinamientos sucesivos de las especificaciones del sistema, evolucionando hasta llegar al sistema final.
+
+Al usar este paradigma, las etapas del ciclo de vida quedan modificadas de la siguiente manera:
+	-Requerimientos, Analisis de requisitos del sistema y analisis de requisitos del software
+	-Diseño, desarrollo e implementacion del prototipo
+	-Codificacion y test unitario, prueba del prototipo, refinamiento iterativo del prototipo y refinamiento de las especificaciones del prototipo
+	-Integracion del sistema, diseño e implementacion del sistema final
+	-Explotacion, operacion y mantenimiento.
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+
+	Caracteristicas:
+		-Solo se desarrollan los (requerimientos)?  que se conocen bien   |-------- ??? ---------|
+		-Los usuarios lo prueban y añaden requerimientos
+		-La aplicacion se hace por fases
+		-Se hace una implementacion parcial y se prueba
+		-Una vez identificados todos los requisitos mediante el prototipo, se construye el producto de ingenieria
+
+	Factores de decision:
+		-Todos los requerimientos no son conocidos al principio
+		-Se utiliza en sistemas complejos
+		-Exige disponer de una herramienta adecuada
+		-Debe ser un sistema con el que se pueda experimentar
+		-Debe desarrollarse rapidamente
+		-Equipo de desarrollo reducido
+
+
+Este modelo es util cuando la definicion de los requisitos es ambigua e imprecisa, porque permite el refinamiento, osea se pueden ampliar los requisitos y las especificacionse derivadas de la etapa anterior.
+Uno de los problemas que se puede presentar es la deteccion tardia de requisitos, siendo su correccion tan costosa como en el caso de cascada.
+
+*** Paradigma en Espiral ***
+
+Este paradigma fue desarrollado usano las mejores caracteristicas tanto del ciclo de vida clasico(cascada), como el de la creacion de prototipos, añadiendo un nuevo elemento: "el analisis de riesgo".
+El paradigma representado mediante una espiral define 4 actividades principales:
+	-Planificacion. Determinacion de objetivos, alternativas y restricciones
+	-Analisis de riesgo. Analisis de alternativas e identificacion de riesgos
+	-Ingenieria. Desarrollo  del producto del siguiente nivel
+	-Evaluacion del Cliente. Valoracion de los resultadoe de la ingenieria
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+
+	Caracteristicas:
+
+		-Se construyen versiones del software cada vez mas complejas
+		-
+
