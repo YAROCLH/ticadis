@@ -248,7 +248,7 @@ Uno de los problemas que se puede presentar es la deteccion tardia de requisitos
 
 *** Paradigma en Espiral ***
 
-Este paradigma fue desarrollado usano las mejores caracteristicas tanto del ciclo de vida clasico(cascada), como el de la creacion de prototipos, añadiendo un nuevo elemento: "el analisis de riesgo".
+Este paradigma fue desarrollado usando las mejores caracteristicas tanto del ciclo de vida clasico(cascada), como el de la creacion de prototipos, añadiendo un nuevo elemento: "el analisis de riesgo".
 El paradigma representado mediante una espiral define 4 actividades principales:
 	-Planificacion. Determinacion de objetivos, alternativas y restricciones
 	-Analisis de riesgo. Analisis de alternativas e identificacion de riesgos
@@ -260,5 +260,114 @@ Las caracteristicas que identifican este paradigma y sus elementos claves que no
 	Caracteristicas:
 
 		-Se construyen versiones del software cada vez mas complejas
-		-
+		-Se eligen multiples alternativas y se escoge la mejor
+		-La aplicacion se hace por fases
+		-Se hace una implementacion parcial y se prueba
+		-Despues de cada vuelta se realiza un prototipo
+
+	Factores de Decision
+		-Se utiliza cuando los requerimientos no se tienen claros
+		-Es menos arriesgado un sistema pequeño que uno grande
+		-Los errores producidos en un incremento son solucionados para el proximo incremento
+
+Algunos rasgos distintivos de este modelo son 
+	-El reconocimiento explicito de las diferentes alternativas
+	-Identificacion de riesgos para cada alternativa desde el comienzo
+	-Al dividir el proyecto en ciclos, al final de cada uno existe un acuerdo para los cambios que hay que realizar al sistema
+	-El modelo se adapta a cualquier tipo de actividad adicional
+
+
+***PARADIGMA DE DESARROLLO ADAPTATIVO O AGILE***
+
+En años recientes, se han publicado diversas ideas en cuanto a formas de hacer el proceso de desarrollo de software mas ligero, agil de implementar y  con mejor respuesta a las necesidades del cliente.
+Las siguientes metodologias han demostrado beneficios e terminos de "time to market", adaptabilidad a la evolucion de los requisitos, satisfaccion del cliente y entrega de productos rapidamente.
+
+***eXtreme Programming(XP)
+
+La principal diferencia con las metodologias tradicionales es que pone mas enfasis en la adaptabilidad que en la previsibilidad. La capacidad de adaptacion a los cambios de requisitos en cualquier punto del proyecto, experimentalmente demuestra ser una aproximacion mejor y mas realista que intentar definir todos los requisitos al comienzo del proyecto e invertir esfuerzos despues en controlar los cambios en los requisitos.
+
+Los principios originales de la programacion extrema son: 
+	Simplicidad
+		La simplicidad es la base de XP, se simplifica el diseño para agilizar el desarrollo y facilitar el mantenimiento. Para mantener la simplicidad es necesaria la refactorizacion del codigo, esto para mantenerlo simple a medida que crece. Tambien se aplica la simplicidad en la documentacion, de esta manera el codigo debe comentarse en su justa medida, intentando que el codigo este autodocumentado, para ello se deben eleggir adecuadamente los nombres de las variables, metodos y clases.
+		Aplicando la simplicidad junto con la autoria colectiva del codigo y la programacion por parejas se asegura que mientras mas grande se haga el proyecto, todo el equipo conocera mas y mejor el sistema completo.
+
+ 	Comunicacion
+ 		La comunicacion se realiza de diferentes formas. Para los programadores el codigo comunica mejor mientras mas simple seas, si el codigo es complejo hay que hacerlo inteligible.
+ 		El codigo autodocumentado es mas fiable que los comentarios ya que estos pronto quedan desfasados con el codigo a medida que es modificado.Debe comentarse solo aquello que no va a variar, por ejemplo el objetivo de una clase o la funcionalidad de un metodo.
+ 		En XP los programadores de comunican constantemente gracias a la programacion en parejas, la comunicacion con el cliente es fluida ya que el cliente forma parte del equipo de desarrollo.El cliente decide que caracteristicas tienen prioridad y siempre debe estar disponible para solucionar dudas.
+
+ 	Retroalimentacion
+ 		Al estar el cliente integrado, su opinion acerca del estado del proyecto se conoce en tiempo real y al realizarse ciclos muy cortos tras los cuales se muestran resultados, se minimiza el tenere que rehacer partes que no cumplen con los requisitos y ayuda a centrarse en lo que es mas importante.
+ 		Considerando los problemas de tenerr ciclos muy largos, meses de trabajo pueden descartarse debido a cambios en los criterios del cliente o malentendidos por parte del equipo de desarrollo.  El codifo tambien es una fuente de retroalimentacion, por ejemplo a travez de las pruebas unitarias se puede saber el estado del codigo.
+
+ 	 Coraje 
+ 		¿Por que coraje? Para los gerentes la programacion en parejas puede ser dificil de aceptar, parece como si la productividad se fuese a reducir a la mitad, ya que solo la mitad de los programadores estan escribiendo codigo. Entonces hay que tener coraje para confiar en que la programacion por parejas beneficia la calidad del codigo sin repercutir negativamete en la productividad.
+ 		La simplicidad es uno de los principios mas dificiles de adoptar. Se requiere coraje para implementar las caracteristicas que el cliente quiere ahora sin optar por un enfoque mas flexible que permita futuras modificaciones.
+
+ 	 Respeto
+ 	 	Los mienbros del equipo se respetan unos a otros, los programadores no pueden realizar cambios que hagan que las pruebas existentes fallen o que demore el trabajo de sus compañeros. Los miembros se respetan su trabajo porque siempre estan luchando por la alta calidad en el producto y buscando el diseño mas optimo para la solucion a traves de la refactorizacion del codigo.
+
+
+ 	El exito de XP radica en que enfatiza la implicacion del cliente final y el trabajo en equipo. Es el resultado de las adopcion de las mejores metodologias de desarrollo de acuerdo a lo que se pretende llevar a cabo con el proyecto y aplicarlo de manera dinamica durante el ciclo de vida del software.
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+
+ 	Caracteristicas
+ 		-Pruebas unitarias continuas, frecuentemente repetidas y automatizadas, incluyendo pruebas de regresion.
+ 		-Desarrollo iterativo e incremental,  pequeñas mejoras una tras otra.
+ 		-Integracion del equipo de programacion con el cliente o usuario.
+ 		-Correccion de todos los errores antes de añadir nueva funcionalidad.
+ 		-Mas facil detectar errores
+ 		-Simplicidad de codigo
+
+ 	Factores de Decision
+ 		-Programacion en parejas, se recomienda que las tareas de desarrollo se lleven a cabo por dos personas en un mismo puesto.
+ 		-Se recomienda que un representante del cliente trabaje junto al equipo de desarrollo.
+ 		-La simplicidad y la comunicacion son extraordinariamente complementarias, con mas comunicacion resulta mas facil identificar que se debe y que no se debe hacer
+
+ ***SCRUM***
+
+ Define un marco para la gestion de proyectos, que se ha utilizado con exito durante los ultimos 10 años. Esta especialmente indicada para proyectos con un rapido cambio de requisitos.
+ Sus principales caracteristicas son:
+ 	-El desarrollo se realiza mediante iteraciones, denominadas sprints, con una duracion de variable (normalmente 30 dias).El resultado de cada sprint es un incremento ejecutable que se muestra al cliente
+ 	-Resuniones a lo largo del proyecto, estas son de verdadera importancia, especialmente la reunion diaria de 15 minutos del equipo de desarrollo para coordinacion en integracion.
+
+SCRUM	es un modelo de referencia que define un conjunto de practicas y roles y que pueden tomarse como punto de partida para definir el proceso de desarrollo que se ejecutara durante el proyecto.
+Los roles principales en SCRUM son el "ScrumMaster" que mantiene los procesos y trabaja de manera similar al director del proyecto, el "ProductOwner", que representa a los "stakeholders" (clientes externos o internos), y el Team que incluye a los desarrolladores.
+Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas practicas para trabajar en equipo y obtener el mejor resultado posible de un proyecto.
+En SCRUM se realizan entregas parciales y regulares del resultado final del proyecto, priorizadas por el beneficio que aportan al receptor del proyecto, por ello SCRUM esta especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados pronto, donde los requisitos son cambiantes o poco definidos, donde la innovacion, la competitividad y la productividad son fundamentales.
+SCRUM tambien se utiliza para resolver situaciones en que no se esta entregando al cliente lo que necesita, cuando las entregas se alargan demasiado, los costes se disparan o la calidad no es aceptable, cuando se necesita capacidad de reaccion ante la competencia, cuando es necesario identificar y solucionar ineficiencias sistemanticamente o cuando se quiere trabajar utilizando un proceso especializado en el desarrollo del producto.
+
+En SCRUM se ejecutan bloques temporales cortos y fijos (iteraciones de 2 semanas o un mes naturales). Cada iteracion tiene que proporcionar un resultado completo, un incremento de producto final que pueda ser entregado con un minimo esfuerzo cuando el cliente lo solicite.
+
+El proceso parte de la lista de  objetivos/requisitos priorizada del producto, que actua como plan del proyecto. En esta lista el cliente prioriza los objetivos balanceando el valor que le aportan respecto a su coste y quedan repartidos en iteraciones y entregas.
+De manera regular el cliente puede maximizar la utilidad de que se desarrolla y el retorno de inversion mediante la replanificacion de objetivos que se realiza al inicio de cada iteracion.
+
+Las actividades que se llevan a cabo en SCRUM son las siguientes:
+
+A)Planificacion de la iteracion.
+	El primer dia de la iteracion de realiza una reunion de planificacion de la iteracion, esta tiene 2 partes:
+		-Seleccion de los requisitos. El cliente presenta al equipo la lista de requisitos priorizada del producto o proyecto, el equipo pregunta al cliente las dudas que surgen y selecciona los requisitos mas prioritarios que se compromete a completar en la iteracion.
+		-Planificacion  de la iteracion. El equipo elabora la lista de tareas necesarias para desarrollar los requisitos. La estimacion de esfuerzo se hace de manera conjunta y los miembros del equipo se autoasignan las tareas.
+
+B) Ejecucion de la iteracion.
+	Cada dia el equipo realiza una reunion de sincronizacion(15 minutos maximo). Cada miembro del equipo inspecciona el trabajo que el resto esta realizando (dependencias entre tareas, progreso hacia el objetivo de la iteracion, obstaculos que pueden impedir este objetivo) para poder hacer las adaptaciones necesarias que permitan cumplir con el compromiso adquirido. En la reunion cada miembro del equipo responde a 3 preguntas:
+		-¿Que he hecho desde la ultima reunion de sincronizacion?
+		-¿Que voy a hacer a partir de este momento?
+		-¿Que impedimentos tengo o voy a tener?
+	Durante la iteracion el facilitador de encarga de que el equipo pueda cumplir con su compromiso y de que no se merme su productividad
+		-Elimina los obstaculos que el equipo no puede resolver por si mismo
+		-Protege al equipo de interrupciones externas que puedan afectar su compromiso o productividad.
+
+C) Inspeccion y adaptacion.
+	El ultimo dia de la iteracion se realiza la reunion de revision de la iteracion, esta tiene 2 partes:
+		-Demostracion (4 hrs maximo). El equipo presenta al cliente los requisitos completados en la iteracion. En funcion de los resultados mostrado el cliente realiza las adaptaciones necesarias (desde la primera iteracion) replanificando el proyecto.
+		-Retrospectiva (4 hrs maximo). El equipo analiza como ha sido su manera de trabajar y cuales son los problemas que podrian impedirle progresar adecuadamente, mejorando de manera continua su productividad. El facilitador se encargara de ir eliminando los obstaculos identificados.
+
+Durante cada sprint, un periodo entre 15 y 30 dias, el equipo crea un incremento de software potencialmente entregable. El conjunto de caracteristicas que forman parte de cada sprint vienen del "Product BackLog", que es un conjunto de requisitos de alto nivel priorizados que definen el trabajo a realizar.
+
+
+
+
+
 
