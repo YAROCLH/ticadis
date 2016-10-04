@@ -68,8 +68,8 @@
 
 		Por ultimo esta el cliente que es quien financia el desarrollo puede ser usuario, operador  o no ocupar posicion alguna.
 
-
-1.2 Analisis de sistemas y formas de modelamiento
+||---------------------CAPITULO 2.0---------------------||
+ Analisis de sistemas y formas de modelamiento
 **El analisis y el diseño en los modelos de desarrollo
 
 Dentro de la ingenieria de software existen varios paradigmas para poder llegar a la contruccion final del producto, a esa serie de procedimientos y etapas se le denomina ciclo de vida.Este ciclo consiste en la concepcion, construccion, implementacion, y aplicacion del producto.
@@ -364,8 +364,261 @@ C) Inspeccion y adaptacion.
 		-Demostracion (4 hrs maximo). El equipo presenta al cliente los requisitos completados en la iteracion. En funcion de los resultados mostrado el cliente realiza las adaptaciones necesarias (desde la primera iteracion) replanificando el proyecto.
 		-Retrospectiva (4 hrs maximo). El equipo analiza como ha sido su manera de trabajar y cuales son los problemas que podrian impedirle progresar adecuadamente, mejorando de manera continua su productividad. El facilitador se encargara de ir eliminando los obstaculos identificados.
 
-Durante cada sprint, un periodo entre 15 y 30 dias, el equipo crea un incremento de software potencialmente entregable. El conjunto de caracteristicas que forman parte de cada sprint vienen del "Product BackLog", que es un conjunto de requisitos de alto nivel priorizados que definen el trabajo a realizar.
+Durante cada sprint, un periodo entre 15 y 30 dias, el equipo crea un incremento de software potencialmente entregable. El conjunto de caracteristicas que forman parte de cada sprint vienen del "Product BackLog", que es un conjunto de requisitos de alto nivel priorizados que definen el trabajo a realizar, estos requisitos se determinan durante el sprint planning. Durante el sprint nadie puede cambiar el BackLog, lo que significa que los requisitos estan congelados.
+SCRUM permite la creacion de equipos autoorganizados impulsando la comunicacion verbal entre los miembros.
 
+Uno de los principios clave de Scrum es reconocer que durante un proyecto los clientes pueden cambiar de idea sobre lo que quieren y necesitan y que los desafios impredecibles no pueden ser facilmente enfrentados de una forma predictiva y planificada. Por lo tanto se acepta que el problema no puede ser completamente entendido o definido, y hay que centrarse en entregar rapidamente y responder a requisitos emergentes.
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+
+	Caracteristicas
+		-Cada sprint, un periodo entre 15 y 30 dias, es definido por el equipo.
+		-El equipo crea un incremento de software potencialmente entregable.
+		-Creacion de equipos autoorganizados impulsando la co-localizacion de todos los mienbors del equipo y la comunicacion verbal entre todos los mienbros y desciplinas involucradas en el proyecto.
+
+	Factores de decision
+		-Se reconoce que durante un proyecto los clientes pueden cambiar de idea sobre lo que quieren y necesitan.
+		-El paradigma acepta que el problema no puede ser completamente entendido o definido, y centrondose en maximizar la capacidad del equipo de entregar rapidamente y responder a requisitos emergentes
+
+
+***ADAPTATIVE SOFTWARE DEVELOPMENT(ASD)***
+
+Sus principales caracteristicas son: iterativo, orientado a los componetes de software mas que a las tareas y toleracia a los cambios.
+El ciclo de vida que propone tiene 3 fases esenciales:
+	Especulacion, se inicia el proyecto y se planifican las caracteristicas del software
+	Colaboracion, se desarrollan las caracteristicas
+	Aprendizaje, se hace una revision de la calidad y se entrega al cliente. La revision de los componentes sirve para aprender de los errores y volver a iniciar el ciclo de desarrollo.
+
+Esta metodologia se adapta al cambio en lugar de luchar contra el. Se basa en la adaptacion continua a circunstancias cambiantes. En ASD no hay un ciclo de planificacion-diseño-construccion del software sino un ciclo especular-colaborar-aprender.
+Al igual que otras metodologias agiles, su funcionamiento es ciclico y reconoce que cada iteracion se produciran cambios e incluso errores. ASD hace enfasis en aplicar la adaptacion continua del proceso al trabajo.
+
+Etapas de ASD
+
+	Especulacion
+		-Inicio, determinar la mision del proyecto
+		-Determinacion del marco temporal del proyecto
+		-Determinacion del numero de iteraciones y la duracion de cada una
+		-Determinacion del objetivo de cada iteracion.
+		-Asignacion de funcionalidad a cada iteracion
+
+	Colaboracion
+		En esta fase se realiza de manera concurrente el desarrollo del trabajo de construccion y gestion del producto, se centra la mayor parte del desarrollo manteniendo un componente ciclico. Una parte importante es la coordinacion que asegure que lo aprendido por un equipo se trasnmite al resto y no tenga que volver a ser aprendido por los otros equipos.
+
+	Aprendizaje
+		La ultima etapa termina con una serie de ciclos de colaboracion, para capturar lo que se ha aprendido, tanto positivo como negativo. Es un elemento critico para la eficacia de los equipos.
+		En cada iteracion se revisa:
+			-Calidad del producto, desde el punto de vista del cliente.Es la unica medida legitima de exito, ademas dentro de las metodologias agiles los clientes tienen un valor importante.
+			-Calidad del producto, desde el punto de vista de los desarrolladores. Se trata de la evaluacion de calidad desde un punto de vista tecnico.
+			-Funcionalidad desarrollada. Proceso de evaluacion para ver lo que se ha aprendido mediante el empleo de los procesos utilizados por el equipo
+			-Estado del proyecto. Como paso previo a la planificacion de la siguiente iteracion, es el punto de partida para la construccion de la siguiente serie de caracteristicas.
+
+Las caracteristicas que identifican este paradigma y sus elementos claves que nos permitan tomar una decision acertada segun el tipo de proyecto son:
+	Caracteristicas
+		-Trabajo orientado y guiado por la mision del proyecto.
+		-Esta basado en la funcionalidad
+		-Es guiado por los riesgos y el trabajo tolerante al cambio
+		-Utiliza informacion disponible acerca de cambios para mejorar el comportamiento del software
+		-La tercera fase del ciclo de vida, revision de los componentes, sirve para aprender de los errores y volver a iniciar el ciclo de desarrollo
+		-Apunta hacia el Rapid Aplication Development (RAD), el cual enfatiza velocidad de desarrollo para crear un producto de alta calidad bajo mantenimiento involucrando al usuario lo mas posible
+
+	Factores de decision
+		-Anticipa cambios y trata automaticamente con ellos dentro de un programa en ejecucion, sin la necesidad de un programador
+		-Promulga colaboracion,la interaccion de personas
+		-Aunque el ciclo entre el aprendizaje y la especulacion es bueno permitiendonos entregar productos con alta calidad, la prolongacion de dicho ciclo por errores o cambios que no son detectados en reuniones anteriores afecta tanto la calidad como el costo del producto.
+		-Es mas fiable usarla para proyectos pequeños y medianos.
+
+
+
+***CRYSTAL METHODS (CM)
+
+Se trata de un conjunto de metodologias caracterizadas por estar centradas en las personas que componen el equipo, ya que de ellas depende el exito del proyecto, y la reduccion al maximo del numero de artefactos producidos. Considera al desarrollo de software un juego cooperativo de invencion y comunicacion, limitado por los recursos a utilizar. 
+El equipo de desarrollo es un factor clave, por lo que se debe invertir esfuerzos en mejorar sus habilidades y destrezas, asi como tener politias de trabajo en equipo definidas. Estas politicas dependeran del tamaño del equipo estableciendose una clasificacion por colores, por ejemplo Crystal Clear (3 a 8 miembros) y Crystal Orange(20 a 50 miembros)
+
+Se toman muy en cuenta 2 parametros criticidad y tamaño del sistema. Los criterios empleados para la medicion de estos parametros son
+	-Criticidad, Dimension de las perdidas que ocasionaria un malfuncionamiento del sistema
+		1(c):Perdida de confort o usabilidad
+		2(d):Perdidas economicas moderadas
+		3(e):Perdidas economicas graves
+		4(i):Perdida de vidas humanas
+	-Dimension, Crystal determina el tamaño del sistema por el numero de personas empleadas en su desarrollo (6-20-40-80)
+
+Es un modelo abierto a la adaptacion e introduccion de practicas de otros modelos agiles(XP, SCRUM). Y su gestion agil de proyectos no es una gestion de anticipacion(requisitos, diseño, planificacion, seguimiento) sino de adaptacion (vision, exploracion y adaptacion)
+El desarrollo agil comprende 5 fases: Concepto, especulacion, exploracion, revision y cierre.
+
+	*Fundamentos de CM*
+
+		-Desarrollo iterativo e incremental, duracion maxima 4 meses, recomienda duracion entre 1 y 3 meses
+		-Hace enfasis en la importancia de las personas sobre los procesos
+		-Hace enfasis en la comunicacion directa
+
+	*La gestion agil tiene como objetivos
+		-valor
+		-reduccion del tiempo de desarrollo, agilidad y fiabilidad
+
+	*La gestion agil se basa en los principios del manifiesto agil y centra el valor
+		-Más en las personas y su interaccion que en los procesos y herramientas
+		-Más en los resultados que funcionan que en la documentacion exhaustiva
+		-Más en la colaboracion con el cliente que el la negacion contractual
+		-Más en la capacidad de respuesta al cambio que en el seguimiento de un plan
+
+
+	Caracteristicas
+		-El desarrollo del sistema funcional se da en periodos cortos
+		-Se utiliza un enfoque de construccion basado en objetos reusables
+
+	Factores de Decision
+		-Se requiere comprender bien los requisitos y el ambito del proyecto
+		-Necesita que el cliente y el desarrollador de comprometan en las actividades necesarias para completar un sistema en corto tiempo
+
+
+***Toma de decision de un modelo de desarrollo de software***
+
+Saber como escoger una metodologia de desarrollo ante un proyecto nuevo es algo complejo, pero es posible aislar un conjunto de criterios y sus cuantificadores para poder tener una base que facilite saber cual metodologia es la adecuada. 
+Los criterios para seleccionar un modelo son:
+	
+*Disponibilidad de recursos
+	Hace referencia a los recursos, equipo, matreriales calificados en el momento indicado y durante el tiempo requerido, los valores posibles son
+		-Todos, que la organizacion dispondra todos los recursos necesarios para la ejecucion del proyecto
+		-Algunos, que la organizacion dispondra algunos recursos necesarios para la ejecucion del proyecto
+
+*Complejidad del proyecto
+	Hace referencia al tamaño del sistema y la complejidad del mismo, donde segun la complejidad del proyecto aplica o no aplica una metodologia especifica. Los cuantificadores se obtienen en base a 2 parametros
+		1)Calculo de complejidad , como puntos de funcion o COCOMO
+		2)En base a la experiencia de las personas y de la madurez en los procesos empleados por la organizacion
+	En este criterio las cuantificaciones posibles son: Alta, Media, Baja 
+
+*Entendimiento de requisitos
+	Se refiere a tener claro los requerimientos del sistema en la etapa inicial del proyecto, los cuantificadores posibles son
+		-Especifico,  es necesario que el analista o diseñador tenga muy claro todos los reequerimientos de forma detallada
+		-Bajo, No es necesario el entendimiento de todos los requerimientos al inicio del proyecto
+
+*Conocimiento del dominio del problema
+	Se refiere a el conocimiento del problema de negocio y su entorno, factores y procesos que participan.
+
+*Manejo de la perspectiva de riesgos
+	Hace referencia a tener en cuenta la definicion de riesgos y perspectivas de los mismos.
+
+*Tiempo de desarrollo
+	Hace referencia al tiempo requerido para el desarrollo del proyecto de software, los cuantificadores posibles son
+		-Alto, mayor a un año
+		-Medio, entre 6 meses y un año
+		-Bajo, menos de 6 meses
+
+*Costo del proyecto
+	Costos tangible e intangibles para poder llevar a acabo el proyecto, adicionalmente los costes deben evaluarse en funcion de cualitativos como el coste de no-calidad, rentabilidad a obtener y la inversion en terminos organizacionales. Los cuantificadores posibles son: Alto, Medio y Bajo
+
+*Calidad del software
+	Hace referencia a que el paradigma asegura que los productos de software y los procesos son conforme a los requerimientos especificados y se ajustan a los planes establecidos, los cualificadores posible son: Alta y Baja
+
+Documentacion
+	Este criterio hace referencia a que el paradigma contempla el proceso para registrar la documentacion producida por un proceso o actividad del ciclo de vida, este proceso contempla el conjunto de actividades para planificar, diseñar, desarrollar, producir, editar, distribuir o mantener aquellos documentos que necesitan todos los involucrados, en este criterio las cuantificaciones son:
+		Bajo, cuando no contempla la documentacion
+		Medio, cuando contempla la documentacion pero de forma no tan estricta
+		Alto, cuando contempla entre sus fases la documentacion
+
+|------------------------CAPITULO 2.1---------------------------------|
+
+EL ANALISIS Y EL DISEÑO EN LOS PROCESOS DE SOFTWARE
+
+Los procesos de software se clasifican en 3 tipos: principales, de soporte y de la organizacion, los de soporte y de organizacion deben existir independientemente del proyecto ejecutado. Los procesos principales se instancian de acuerdo con la situacion particular
+
+La norma ISO/IEC 12207 establece un proceso de ciclo de vida para el software que incluye procesos y actividades que se aplican desde la definicion de requisitos, adquisicion y configuracion de los servicios del sistema, hasta la finalizacion de su uso. El objetivo de este estandar es proporcionar una estructura comuna para que compradores, proveedores, desarrolladores, operadores, gestores, etc usen un lenguaje comun. Y este lenguaje comun se establece en forma de procesos bien definidos.
+La estructura de este estandar has sido concebida de manera flexible y modular de manera que pueda ser adaptada a las necesidades de cualquiera que lo use, para conseguirlo se basa en 2 principios: modularidad y responsabilidad. Con la modularidad se pretende conseguir procesos con un minimo acoplamiento y una maxima cohesion y en cuanto a la responsabilidad se busca establecer un responsable para cada proceso, facilitando la aplicacion del estandar en proyectos en los que pueden existir distintas personas u organizaciones involucradas.
+
+***Procesos Principales***
+
+
+Los procesos principales del ciclo de vida son 5, las actividades y tareas en los procesos principales son responsabilidad de la organizacion que lo inicia y lo  ejecuta. Los procesos son:
+
+	1)Proceso de adquisicion. 
+		Define las actividades del adquiriente,la organizacion que adquiere un sistema o producto de software.
+		El proceso comienza con la identificacion de la necesidad de adquirir uns sistema o software, continua con la preparacion y publicacion de una solicitud de propuesta, la seleccion del proveedor, la gestion del proceso de adquisicion hasta la aceptacion del sistema.
+		La organizacion que tiene la necesidad, puede ser llamado el propietario, puede contratar todas o parte de las actividades de la adquisicion a un tercero. Entonces el adquiriente puede ser el propietario o un tercero.
+		El adquiriente gestiona el proceso, establece una infraestructura basada en el proceso que se sigue  y gestiona el proceso a nivel organizacion.
+		Este proceso consiste en las siguientes actividades
+			-Inicio
+			-Preparacion de la solicitud de propuesta
+			-Preparacion y actualizacion del contrato
+			-Seguimiento del proveedor
+			-Aceptacion y finalizacion
+
+
+	2)Proceso de suministro. 
+	Define las actividades del proveedor, organizacion que proporciona el sistema. 
+	El proceso se puede iniciar ya sea por la descicion de preparar una oferta para contestar una solicitud de propuesta de un adquiriente, o por el inicio de el contrato con el adquiriente para proporcionarle un sistema. El proceso continua con la determinacion de los procedimientos y recursos para asegurar el proyecto, incluyendo la preparacion y ejecucion de los planes del proyecto hasta la entrega del sistema.
+	Este proceso consta de las siguientes actividades
+		-Inicio
+		-Preparacion de la respuesta
+		-Contrato
+		-Planificacion
+		-Ejecucion y control
+		-Revision y evaluacion
+		-Entrega y finalizacion
+
+
+	3)Proceso de desarrollo.
+		Contiene las actividades y tareas del desarrollador, las actividades para el analisis de los requerimientos, diseño, codificacion, integracion, pruebas e instalacion. Puede contener actividades a nivel de sistema si se estipula en el contrato. El desarrollador lleva a cabo o soporta las actividades de este proceso de acuerdo al contrato.
+	Este proceso consta de las siguientes actividades 
+		-Implementacion del proceso
+		-Analisis de los requerimientos del sistema
+		-Diseño de la arquitectura del sistema
+		-Analisis de los requerimientos de software
+		-Diseño de la arquitectura del software
+		-Diseño detallado del software
+		-Codificacion y pruebas
+		-Integracion del software
+		-Pruebas de calificacion del software
+		-Integracion del sistema
+		-Pruebas de calificacion del sistema
+		-Instalacion del software
+		-Apoyo a la aceptacion del software
+
+
+	4)Proceso de operacion. 
+	Define las actividades del operador, organizacion que proporciona el servicio de operar un sistema en su entorno real.
+	El proceso cubre la operacion del producto software y el apoyo a la operacion de los usuarios. Ya que la operacion del producto software esta integrada a la operacion del sistema , las actividades de este proceso hacen referencia al sistema.
+	Este proceso consta de las siguientes actividades
+		-Implementacion del proceso
+		-Pruebas de operacion
+		-Operacion del sistema
+		-Soporte al usuario
+
+	4)Proceso de mantenimiento. 
+	Define las actividades del responsable de mantenimiento, organizacion que proporciona el servicio de mantenimiento del producto informatico.
+	Este proceso se inicia cuando el producto de software sufre modificaciones en el codigo y la documentacion asociada, debido a un problema o  a la necesidad de mejora o adaptacion. El objetivo es modificar el software preservando su integridad.Este proceso incluye la migracion y retirada del software, el proceso termina con la retirada del software
+	Este proceso consta de las siguientes actividades
+		-Implementacion del proceso
+		-Analisis de problemas y modificaciones
+		-Implementacion de las modificaciones
+		-Revision/aceptacion del mantenimiento
+		-Migracion
+		-Retirada del software
+
+***Procesos de apoyo o soporte***
+Un proceso de apoyo es el que apoya a otro proceso como parte esencial del mismo, con un proposito bien definido que contribuye al exito y a la calidad del proyecto.
+Hay 8 procesos de apoyo del ciclo de vida:
+
+
+	*Proceso de documentacion
+		Define las actividades para el registro de la informacion producida por un proceso del ciclo de vida. Contiene el conjunto de actividades para planificar, desarrollar, diseñar, producir, editar, distribuir y mantener aquellos documentos que necesitan todos los involucrados tales como gerentes, ingenieros y usuarios.
+
+	*Proceso de gestion de la configuracion
+		Define las actividades de la gestion de la configuracion. La gestion de la configuracion es el proceso de aplicar procedimientos tecnicos y administrativos a lo largo del ciclo de vida del software 
+
+	*Proceso de aseguramiento de la calidad 
+		Define las actividades para asegurar que los productos de software y los procesos son conformes a sus requerimientos especificados y se ajustan a lo establecido. Revision conjunta, Auditoria, Verificacion y Validacion pueden ser usadas como tecnicas para el aseguramiento de la calidad.
+
+	*Proceso de Verificacion
+		Define las actividades para verificar hasta un nivel de detalle dependiente del proyecto de software.
+
+	*Proceso de Validacion
+		Define las actividades para validar los productos de software
+
+	*Proceso de revision conjunta
+		Define las actividades para evaluar el estado y productos de una actividad.
+		Este proceso puede ser empleado por cualquiera de las 2 partes, donde una de las partes revisa a la otra parte  de manera conjunta.
+
+Las actividades y tareas en un proceso de apoyo o soporte son responsabilidad de la organizacion que lleva acabo dicho proceso.
 
 
 
