@@ -603,7 +603,7 @@ Hay 8 procesos de apoyo del ciclo de vida:
 		Define las actividades para el registro de la informacion producida por un proceso del ciclo de vida. Contiene el conjunto de actividades para planificar, desarrollar, diseñar, producir, editar, distribuir y mantener aquellos documentos que necesitan todos los involucrados tales como gerentes, ingenieros y usuarios.
 
 	*Proceso de gestion de la configuracion
-		Define las actividades de la gestion de la configuracion. La gestion de la configuracion es el proceso de aplicar procedimientos tecnicos y administrativos a lo largo del ciclo de vida del software 
+		Define las actividades de la gestion de la configuracion. La gestion de la configuracion es el proceso de aplicar procedimientos tecnicos y administrativos a lo largo del ciclo de vida del software para identificar, definir y establecer la linea base de los elementos de un sistema. Controlar modificaciones 
 
 	*Proceso de aseguramiento de la calidad 
 		Define las actividades para asegurar que los productos de software y los procesos son conformes a sus requerimientos especificados y se ajustan a lo establecido. Revision conjunta, Auditoria, Verificacion y Validacion pueden ser usadas como tecnicas para el aseguramiento de la calidad.
