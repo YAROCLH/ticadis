@@ -330,7 +330,7 @@ Las caracteristicas que identifican este paradigma y sus elementos claves que no
  Define un marco para la gestion de proyectos, que se ha utilizado con exito durante los ultimos 10 años. Esta especialmente indicada para proyectos con un rapido cambio de requisitos.
  Sus principales caracteristicas son:
  	-El desarrollo se realiza mediante iteraciones, denominadas sprints, con una duracion de variable (normalmente 30 dias).El resultado de cada sprint es un incremento ejecutable que se muestra al cliente
- 	-Resuniones a lo largo del proyecto, estas son de verdadera importancia, especialmente la reunion diaria de 15 minutos del equipo de desarrollo para coordinacion en integracion.
+ 	-Reuniones a lo largo del proyecto, estas son de verdadera importancia, especialmente la reunion diaria de 15 minutos del equipo de desarrollo para coordinacion en integracion.
 
 SCRUM	es un modelo de referencia que define un conjunto de practicas y roles y que pueden tomarse como punto de partida para definir el proceso de desarrollo que se ejecutara durante el proyecto.
 Los roles principales en SCRUM son el "ScrumMaster" que mantiene los procesos y trabaja de manera similar al director del proyecto, el "ProductOwner", que representa a los "stakeholders" (clientes externos o internos), y el Team que incluye a los desarrolladores.
@@ -603,22 +603,173 @@ Hay 8 procesos de apoyo del ciclo de vida:
 		Define las actividades para el registro de la informacion producida por un proceso del ciclo de vida. Contiene el conjunto de actividades para planificar, desarrollar, diseñar, producir, editar, distribuir y mantener aquellos documentos que necesitan todos los involucrados tales como gerentes, ingenieros y usuarios.
 
 	*Proceso de gestion de la configuracion
-		Define las actividades de la gestion de la configuracion. La gestion de la configuracion es el proceso de aplicar procedimientos tecnicos y administrativos a lo largo del ciclo de vida del software para identificar, definir y establecer la linea base de los elementos de un sistema. Controlar modificaciones 
+		Define las actividades de la gestion de la configuracion. La gestion de la configuracion es el proceso de aplicar procedimientos tecnicos y administrativos a lo largo del ciclo de vida del software para 
+		-Identificar, definir y establecer la linea base de los elementos de un sistema
+		-Controlar modificaciones y releases de los elementos
+		-Registrar e informar del estado de los elementos y peticiones de modificacion
+		-Asegurar la completitud, consistencia y correccion de los elementos
+		-Controlar el almacenamiento, manipulacion y entrega de los elementos
 
 	*Proceso de aseguramiento de la calidad 
 		Define las actividades para asegurar que los productos de software y los procesos son conformes a sus requerimientos especificados y se ajustan a lo establecido. Revision conjunta, Auditoria, Verificacion y Validacion pueden ser usadas como tecnicas para el aseguramiento de la calidad.
+		Para que el aseguramiento de la calidad sea imparcial se necesita libertad organizativa y autoridad respecto a las personas responsables del desarrollo.
+		Este proceso consta de las siguientes actividades.
+			-Implementacion del proceso
+			-Aseguramiento del producto
+			-Aseguramiento del proceso
+			-Aseguramiento del sistemas de calidad
 
 	*Proceso de Verificacion
-		Define las actividades para verificar hasta un nivel de detalle dependiente del proyecto de software.
+		Define las actividades para verificar hasta un nivel de detalle dependiente del proyecto de software.Determinar si los productos de  una actividad cumplen con los requerimientos o condiciones que tienen impuestas por las actividades precedentes.
 
 	*Proceso de Validacion
-		Define las actividades para validar los productos de software
+		Es un proceso para determinar si los requerimientos y el sistema cumplen con su uso especifico previsto, se puede llevar a cabo en etapas tempranas y puede usarse como parte del apoyo a la aceptacion del producto.
 
 	*Proceso de revision conjunta
 		Define las actividades para evaluar el estado y productos de una actividad.
 		Este proceso puede ser empleado por cualquiera de las 2 partes, donde una de las partes revisa a la otra parte  de manera conjunta.
+		Este proceso consta de las siguientes actividades
+			-Implementacion del proceso
+			-Revisiones de la gestion del proyecto
+			-Revisiones tecnicas
+
+	*Proceso de Auditoria
+		Es un proceso para determinar el cumplimiento con los requerimientos, planes y contrato, segun aplique.
+			-Implementacion del proceso
+			-Auditoria
+
+	*Proceso de Resolucion de problemas
+		Es un proceso para analizar y resolver problemas (incluidas las no conformidades), cualquiera que sea su naturaleza u origen, que se descubran durante la ejecucion de los procesos de desarrollo, operacion, mantenimiento u otros. El objetivo es proporcionar un mecanismo que asegure que todos los problemas descubiertos se analizan y resuelven.
+			-Implementacion del proceso
+			-Solucion de problemas
 
 Las actividades y tareas en un proceso de apoyo o soporte son responsabilidad de la organizacion que lleva acabo dicho proceso.
+
+
+***Procesos de la Organizacion***
+
+Estos procesos son empleados por una organizacion para establecer e implementar una infraestructura constituida por procesos y personal asociado al ciclo de vida y para mejorar continuamente esta infraestructura.
+Los procesos organizativos son:
+
+
+*Proceso de gestion 
+	Contiene las actividades genericas y tareas que pueden ser empleadas por cualquier parte que tenga que gestionar sus respectivos procesos. El gerente es responsable de la gestion del producto, proyecto, tareas, procesos aplicables.
+	Este proceso consta de las siguientes actividades
+		-Inicio y definicion del alcance
+		-Planificacion
+		-Ejecucion y control
+		-Revision y evaluacion
+		-Finalizacion
+
+*Proceso de infraestructura
+	Es un proceso para establecer y mantener la infraestructura que necesita cualquier otro proceso. La infraestructura puede incluir hardware, software, herramientas, tecnicas, normas e instalaciones para el desarrollo, operacion o mantenimiento
+	Este proceso consta de las siguientes actividades
+		-Implementacion del proceso
+		-Establecimiento de la infraestructura
+		-Mantenimiento de la infraestructura
+
+*Proceso de formacion o recursos humanos 
+	Es un proceso para proporcionar y mantener personal capacitado.  Los procesos principales del ciclo de vida dependen en gran medida de personal entendido y competente. Por lo tanto es imprescindible que la formacion del personal este planificada e implementada de manera temprana, para que este disponible personal capacitado en el momento en que el producto de software se suministra,desarrolla, opera o mantiene.
+	Este proceso consta de las siguientes actividades
+		-Implementacion del proceso
+		-Desarrollo del material de formacion
+		-Implementacion del plan de formacion
+
+
+*Relacion entre procesos*
+
+	-Bajo el punto de vista del contrato, las partes adquiriente y proveedor negocian y se someten a un contrato empleando el proceso de adquisicion y suministro, respectivamente
+	-Bajo el punto de vista de gestion, el adquiriente, proveedor desarrollador, operador, responsable del mantenimiento u otras partes gestionan sus propios procesos
+	-Bajo el punto de vista de la operacion, el operador proporciona el servicio de operacion del software para sus usuarios
+	-Bajo el punto de vista de ingenieria, el desarrollador o responsable del mantenimiento llevan a cabo sus respectivas tareas de ingenieria para producir o modificar los puntos de software
+	-Bajo el punto de vista de apoyo, las partes(gestion de la configuracion, aseguramiento de la calidad) proporcionan servicios de apoyo a otros para completar tareas unicas y especificas
+Los procesos organizativos se emplean a nivel corporativo para establecer e implementar la estructura compuesta por los procesos y personal asociados al ciclo de vida y mejorarlos continuamente.
+
+
+2.3 ***TIPOS DE ANALISIS Y DISEÑO INFORMATICO***
+
+El analisis puede dividirse en cuatro areas:
+	-Reconocimiento del problema
+	-Evaluacion y sintesis
+	-Especificacion
+	-Revision
+
+Inicialmente, el analista estudia la especificacion del sistema(si existe) y el plan de proyecto. Es importante comprender el contexto del sistema y revisar el ambito de los programas que se uso para generar las estimaciones de la planificacion.
+Se debe establecer la comunicacion necesaria para el analisis, de formas que se asegure el reconocimiento del problema. El analista debe estar en contacto con el equipo tecnico y el de gestion del usuario/cliente y con la empresa que va a desarrollar el software.
+
+La evaluacion del problema y la sintesis de la solucion es la siguiente area principal del trabajo de analisis. El analista debe evaluar el flujo y estructura de la informacion, refinar en detalle todas las funciones del programa, establecer las caracteristicas de la interfaz del sistema y descubrir las ligaduras del diseño. Cada una de estas tareas sirve para descubrir el problema de forma que pueda sintetizarse un enfoque o solucion global. Las tareas asociadas con el analisis y especificacion existen para dar una representacion del programa que pueda ser revisada y aprobada por el cliente.
+
+Lo ideal seria que el cliente desarrollara una especificacion de requerimientos por si mismo, esto raramente sucede, por lo que casi siempre esta especificacion se desarrolla entre el cliente y el tecnico. Una vez que se han descrito las funcionalidades basicas, comportamiento, interfaz e informacion, se especifican los criterios de validacion para demostrar una comprension de una correcta implementacion de los programas.
+Estos criterios sirven como base para hacer una prueba durante el desarrollo de los programas. Para definir las caracteristicas y atributos del software se escribe una especificacion de requerimientos formal.
+
+** Los Tipos de Analisis **
+
+1.-Analisis de requerimientos
+
+El analisis de requerimientos pretende resolver la pregunta ¿Cual es el problema?, cuya respuesta debe permitir identificar:
+	-Las funciones a desarrollar y el dominio de informacion a manejar
+	-Las posibles ampliaciones
+	-El monto y el tipo de documentacion
+	-Las caracteristicas y funciones de desempeño, comportamiento, rendimiento y las interconexiones logicas
+	-El estudio de factibilidad tecnico, social, economico y politico.
+
+Las tareas y documentos (o informacion) a generar son:
+	-Reconocer el problema: Necesidades, Alcance general, Plan del problema, Analisis de riesgos, Especificacion del problema.
+	-Evaluacion y Sintesis: Alcance detallado, flujos de informacion, restricciones, prototipos.
+	-Modelamiento del Proyecto: Criterios de validacion, de acuerdo a las alternativas se escoge una y se realiza un modelamiento extensivo sobre ella.
+	-Especificacion: Modelamiento del sistema, donde se especifica todo lo que se requiere
+	-Revision: Ajustes, detalles o errores, Necesidades nuevas del usuario, Ajustes de calendarizacion de riesgos, Monitoreo y Control.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
