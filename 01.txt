@@ -720,6 +720,31 @@ Las tareas y documentos (o informacion) a generar son:
 	-Especificacion: Modelamiento del sistema, donde se especifica todo lo que se requiere
 	-Revision: Ajustes, detalles o errores, Necesidades nuevas del usuario, Ajustes de calendarizacion de riesgos, Monitoreo y Control.
 
+Puede dividirse en 5 areas de esfuerzo:
+	-Reconocimiento del problema
+	-Evaluacion y sintesis
+	-Modelado
+	-Especificacion
+	-Revision
+
+El modelo de analisis debe lograr 3 objetivos primarios
+	-Describir lo que quiere el cliente
+	-Establecer una base para la creacion de un diseño de software
+	-Definir un conjunto de requisitos que se pueda validar una vez que se construye el software
+
+	El centro de el moelo de analisis es el diccionario de datos que es un almacen de defiiciones de todos los objetos de datos consumidos y producidos por el software.
+	Tres tipos de diagramas rodean este diccionrio.
+		-Diagrama entidad relacion, representa las relaciones entre los objetos de datos, actividad de modelado de datos
+		-Diagrama de flujo de datos, sirve para 
+			*Proporcionar una indicacion de como se transforman los datos a medida que se avanza en el sistema.
+			*Representar las funciones que transforman el flujo de datos, proporcionar informacion adicional.
+		-Diagrama de transicion de datos, indica como se comporta el sistema como consecuencia de sucesos externos
+
+La IEEE divide los requerimientos en funcionales y no funcionales
+	-Funcionales: condicion o capacidad de un sistema requerida por el usuario para resolver un problema o alcanzar un objetivo
+	-No funcionales: condicion o capacidad que debe poseer un sistema para satisfacer un contrato, un estandar una especificacion u otro documento formalmente impuesto. Para realizar bien el desarrollo de software es esencal realiar una especificacion completa de los requerimientos de los mismos
+	
+
 
 
 
