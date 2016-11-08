@@ -69,6 +69,8 @@
 		Por ultimo esta el cliente que es quien financia el desarrollo puede ser usuario, operador  o no ocupar posicion alguna.
 
 ||---------------------CAPITULO 2.0---------------------||
+
+
  Analisis de sistemas y formas de modelamiento
 **El analisis y el diseño en los modelos de desarrollo
 
@@ -706,48 +708,259 @@ Estos criterios sirven como base para hacer una prueba durante el desarrollo de 
 
 1.-Analisis de requerimientos
 
-El analisis de requerimientos pretende resolver la pregunta ¿Cual es el problema?, cuya respuesta debe permitir identificar:
-	-Las funciones a desarrollar y el dominio de informacion a manejar
-	-Las posibles ampliaciones
-	-El monto y el tipo de documentacion
-	-Las caracteristicas y funciones de desempeño, comportamiento, rendimiento y las interconexiones logicas
-	-El estudio de factibilidad tecnico, social, economico y politico.
+	El analisis de requerimientos pretende resolver la pregunta ¿Cual es el problema?, cuya respuesta debe permitir identificar:
+		-Las funciones a desarrollar y el dominio de informacion a manejar
+		-Las posibles ampliaciones
+		-El monto y el tipo de documentacion
+		-Las caracteristicas y funciones de desempeño, comportamiento, rendimiento y las interconexiones logicas
+		-El estudio de factibilidad tecnico, social, economico y politico.
 
-Las tareas y documentos (o informacion) a generar son:
-	-Reconocer el problema: Necesidades, Alcance general, Plan del problema, Analisis de riesgos, Especificacion del problema.
-	-Evaluacion y Sintesis: Alcance detallado, flujos de informacion, restricciones, prototipos.
-	-Modelamiento del Proyecto: Criterios de validacion, de acuerdo a las alternativas se escoge una y se realiza un modelamiento extensivo sobre ella.
-	-Especificacion: Modelamiento del sistema, donde se especifica todo lo que se requiere
-	-Revision: Ajustes, detalles o errores, Necesidades nuevas del usuario, Ajustes de calendarizacion de riesgos, Monitoreo y Control.
+	Las tareas y documentos (o informacion) a generar son:
+		-Reconocer el problema: Necesidades, Alcance general, Plan del problema, Analisis de riesgos, Especificacion del problema.
+		-Evaluacion y Sintesis: Alcance detallado, flujos de informacion, restricciones, prototipos.
+		-Modelamiento del Proyecto: Criterios de validacion, de acuerdo a las alternativas se escoge una y se realiza un modelamiento extensivo sobre ella.
+		-Especificacion: Modelamiento del sistema, donde se especifica todo lo que se requiere
+		-Revision: Ajustes, detalles o errores, Necesidades nuevas del usuario, Ajustes de calendarizacion de riesgos, Monitoreo y Control.
 
-Puede dividirse en 5 areas de esfuerzo:
-	-Reconocimiento del problema
-	-Evaluacion y sintesis
-	-Modelado
-	-Especificacion
-	-Revision
+	Puede dividirse en 5 areas de esfuerzo:
+		-Reconocimiento del problema
+		-Evaluacion y sintesis
+		-Modelado
+		-Especificacion
+		-Revision
 
-El modelo de analisis debe lograr 3 objetivos primarios
-	-Describir lo que quiere el cliente
-	-Establecer una base para la creacion de un diseño de software
-	-Definir un conjunto de requisitos que se pueda validar una vez que se construye el software
+	El modelo de analisis debe lograr 3 objetivos primarios
+		-Describir lo que quiere el cliente
+		-Establecer una base para la creacion de un diseño de software
+		-Definir un conjunto de requisitos que se pueda validar una vez que se construye el software
 
-	El centro de el moelo de analisis es el diccionario de datos que es un almacen de defiiciones de todos los objetos de datos consumidos y producidos por el software.
-	Tres tipos de diagramas rodean este diccionrio.
-		-Diagrama entidad relacion, representa las relaciones entre los objetos de datos, actividad de modelado de datos
-		-Diagrama de flujo de datos, sirve para 
-			*Proporcionar una indicacion de como se transforman los datos a medida que se avanza en el sistema.
-			*Representar las funciones que transforman el flujo de datos, proporcionar informacion adicional.
-		-Diagrama de transicion de datos, indica como se comporta el sistema como consecuencia de sucesos externos
+		El centro de el modelo de analisis es el diccionario de datos que es un almacen de defiiciones de todos los objetos de datos consumidos y producidos por el software.
+		Tres tipos de diagramas rodean este diccionrio.
+			-Diagrama entidad relacion, representa las relaciones entre los objetos de datos, actividad de modelado de datos
+			-Diagrama de flujo de datos, sirve para 
+				*Proporcionar una indicacion de como se transforman los datos a medida que se avanza en el sistema.
+				*Representar las funciones que transforman el flujo de datos, proporcionar informacion adicional.
+			-Diagrama de transicion de datos, indica como se comporta el sistema como consecuencia de sucesos externos
 
-La IEEE divide los requerimientos en funcionales y no funcionales
-	-Funcionales: condicion o capacidad de un sistema requerida por el usuario para resolver un problema o alcanzar un objetivo
-	-No funcionales: condicion o capacidad que debe poseer un sistema para satisfacer un contrato, un estandar una especificacion u otro documento formalmente impuesto. Para realizar bien el desarrollo de software es esencal realiar una especificacion completa de los requerimientos de los mismos
+	La IEEE divide los requerimientos en funcionales y no funcionales
+		-Funcionales: condicion o capacidad de un sistema requerida por el usuario para resolver un problema o alcanzar un objetivo
+		-No funcionales: condicion o capacidad que debe poseer un sistema para satisfacer un contrato, un estandar una especificacion u otro documento formalmente impuesto. Para realizar bien el desarrollo de software es esencal realiar una especificacion completa de los requerimientos de los mismos
+
+	Independientemente de lo bien diseñado que este, un sistema pobremente especificado descepcionara al usuario y hara fracasar el desarrollo.
+	La tarea del analisis de los requerimientos es un proceso de descubrimiento y refinamiento, el ambito del sistema, establecido durante la ingenieria del sistema es refinado en detalle.
+	El cliente intenta reformular su concepto de la funcion y comportamiento del sistema en detalles concretos. Quien desarrolla el software actua como interrogador, consultor y el que resuelve los problemas.
+	Debido a que el contenido de comunicacion es muy alto, abundan los cambios por mala interpretacion o falta de informacion.
+	El analisis de requerimientos facilita especificar la funcion y comportamiento del sistema, refinar la asignacion de software y representar el dominio de la informacion que sera tratado por el programa, la representacion de la informacion y las funciones que pueden ser traducidas en datos, arquitectura y diseño procedimental. Finalmente, la especificacion de requerimientos sumiistra los medios para valorar la calidad del sistema una vez que se haya construido.
+
+2.-Analisis de requisistos
+
+	Los requisistos se presentan en una lista ordenada, cateforizada sugun su ambito, influencia, prioridad respecto al ambito y al entorno de la aplicacion de proyecto
 	
+		-Restricciones de diseño: requisitos que limitan el desarrollo al crear el producto. Se etiquetan como RD.x, siendo x el numero de requisito.
+
+		-Requisitos funcionales: conjunto de requisitos que reflejan las funciones que debe prestar el sistema, se clasifican en
+			*Requisitos nominales: requisito para el funcionamiento del sistema en situaciones normales. Se etiquetan como FN.x 
+			*Requisitos no nominales: requisitos para el funcionamiento del sistema en situaciones especiales o condiciones de error, se etiquetan como FFx
+
+		-Requisito de interfaz: conjunto de requisitos que definen las necesidades del sistema con otros sistemas y usuarios, se etiquetan como IN.x
+
+		-Requisitos de calidad: exigencias de calidad que se piden explicitamente para el producto. En esta categoria se engloban los requisitos de rendimiento, accesibilidad, facilidad de uso, etc. Se etiquetan como CA.x
+
+		-Requisitos de evlolucion: requisitos para el diseño del producto con el objetivo de facilitar la adaptacion a exigencias o condiciones que puedan surgir en el futuro. Se etiquetan como EV.x
+
+		-Requisitos de proyecto: requisitos que afectan y condicionan el proceso de desarrollo. Se etiquetan como PR.x
+
+		-Requisitos de soporte: requisitos que deben ser cumplidos por el cliente. Se etiquetan como SO.x
+
+	Para cada requisito, se realiza una caracterizacion estructurada siguiendo el esquema:
+
+		-Descripcion: descripcion corta del requisito, que se concreta en los siguientes apartados.
+		-Importancia: pudiendo ser una de estas tres clases:
+			*Esencial: el no cumplimiento del requisito provocaria el rechazo inmediato del producto por el cliente.
+			*Condicional: el requisito mejoraria el resultado final del desarrollo, pero su no cumplimiento no produciria su rechazo
+			*Opcional: el requisito no tiene que ser implementado, pero se puede tener en cuenta al realizar el diseño del producto.
+
+		-Validez: este apartado demuestra la validez del requisito. Tiene 4 secciones, que estaran presentes solo en caso de ser relevantes para ese requisito en concreto.
+			*Medible: describe como comprobar el grado de cumplimiento del requisito.
+			*Alcanzable: justifica el realismo del requisito y propone de un modo general, un camino para lograr su consecucion
+			*Relevante: justifica la presencia del requisito en el documento, indicando como colabora a definir la identidad global del producto
+			*Especifico: extiende la descripcion del requisito, con referencias a casos de uso, si fuesen relevantes.
+
+3.-Analisis Sistemico
+	Analiza las funciones y relaciones que cumple cada una de las partes del un producto y la relacion entre estructura y el funcionamiento. Se trata de ver de que manera cada una de las partes contribuye a que el producto funcione.
+	Las principales caracteristicas  de la moderna teoria de la adminsitracion basada en analisis sistemico son:
+		-Punto de vista sistemico: la moderna teoria visualiza a la organizacion como un sistema constituido por 5 partes basicas: entrada, salida, proceso, retroalimentacion y ambiente.
+		-Enfoque dinamico: el enfasis de la teoria moderna es sobre el proceso dinamico de interaccion que ocurre dentro de la estructura de un organizacion
+		-Multidimensional y multinivelado: se considera a la organizacion desde un punto de vista micro y macroscopico, es micro cuando es considerada dentro de su ambiente y es macro cuando se analizan sus unidades internas.
+		-Multimotivacional: un acto puede ser motivado por muchos motivos. Las organizaciones existen porque sus participantes esperan satisfacer ciertos objetivos a traves de ellas.
+		-Probabilistico: la teoria moderna tiende a ser probabilistica. Con expresiones como "en general", "puede ser", sus variables pueden ser explicadas en terminos predictivos  y no con certeza.
+		-Multidiciplinaria: busca conceptos y tecnicas de muchos campos de estudio, presenta una sintesis integradora de partes relevantes de todos los campos
+		-Descriptivo: busca describir las caracteristicas de las  organizaciones y de la administracion. Se conforma con buscar y comprender los fenomenos organizacionales y dejar la escogencia de objetivos y metodos al individuo.
+		-Multivariable: tiende a asumir que un evento puede ser causado por numerosos factores interrelacionados e interdependientes. Los factores causales podrian ser generados por la retroalimentacion.
+		Adaptativa: un sistema adaptativo. La organizacion debe adaptarse a los cambios del ambiente para sobrevivir. Se genera como consecuencia una focalizacion en los resultados en lugar del enfasis sonbre el proceso a las actividades de la organizacion.
+
+4.-Analisis informatico
+	Analiza las descripciones de los elementos fisicos del sistema y sus relaciones y las relaciones que cumplen cada uno de los componentes que representan todos los tipos de elementos de software que entran en la fabricacion de aplicaciones informaticas y las diversas interacciones de un producto. Se trata de ver de que manera sera el despliegue de los componentes con sus respectivas relaciones, paraa garantizar que el producto funcione y la disponibilidad del mismo.
+	Adicionalmente se analiza la disposicion fisica de los distintos nodos que componen un sistema y el reparto de los componentes sobre dichos nodos. Los estereotipos permiten precisar la naturaleza del equipo: Dispositivos, procesadores y memoria.
+
+
+5.-Ingenieria de requisitos
+
+Comprende todas las tareas relacionadas con la determinacion de las necesidades o de las condiciones a satisfacer para un software nuevo o modificado, tomando en cuenta los diversos requisitos de los inversores, que pueden entrara en conflicto entre ellos.
+
+El proposito de la ingenieria de requisitos es hacer que los mismos alcancen un estado optimo antes de alcanzar la fase de diseño. Los buenos requisitos deben ser medibles, comprobables y sin ambiguedades o contradicciones.
+Desde un punto de vista conceptual, las actividades son de 5 clases.
+	-Obtener requisitos: a traves de entrevistas, comunicacion con clientes o usuarios. Para saber que es lo que solicita.
+	-Analizar requisitos: detectar y corregir  las falencia comunicativas, transformando los requisitos obtenidos de entrevistas y requisitos en condiciones apropiadas para ser tratadas por el diseño
+	-Docuemntar requisitos: igual que todas las etapas los requisitos deben estar debidamente documentados
+	-Verificar los requisitos: consiste en comprobar el correcto funcionamiento de un requisito en la aplicacion
+	-Validar los requisitos: comprobar que los requisitos implementados se corresponden con lo que inicialmente se pretendia
+
+Actualmente el termino Analisis de Sistemas se suele confundir con el termino Analisis informatico.
+	-El analisis de sistemas consiste ne determinar los objetivos y limites del sistema, caracterizar su estructura y funcionamiento, marcar las directrices que permitan alcanzar los objetivos propuestos y evaluar sus concecuencias. El analisis informatico puede dividirse en 4 areas: reconocimiento del problema, evaluacion y sintesis, especificacion y revision.
+	-El analisis de sistemas es mas antiguo que el analisis informatico y podria decirse que el segundo es un caso, tipo o subconjunto del primero.
+	-El analisis de sistemas busca analizar sistemas de cualquier tipo con fines de comprender, mejorar, revisar un fenomeno o un sistema del cual mucas veces no se conoce ni sus fronteras ni sus limites. El analisis informatico se centra en analizar un sistema ya acotado Y definido.
+	-El analisis informatico parte de la base de que hay una falla, error o defecto. En un Analisis de sistemas puede no existir esta situacion, sino por ejemplo el deseo de comprender algo.
+	-El analisis de sistemas sirve tanto para sistemas socio-tecnicos humanos-no-humanos como cualquier otro. El analisis informatico apunta a fenomenos organizacionales y de preferencia empresariales con una cierta base.
+
+
+|-----------Resumen-----------|
+
+1) Analisis de requerimientos
+	Los requerimientos son aquellas cosas que  un cliente espera resolver o un usuario espera ver resuelto, y no es lo que el tecnico desea hacer. Cuando se hace este analisis se desea aclarar y dejar muy claro lo que quieren los usuarios,clientes y operadores. Se usan diversas herramientas de modelado y el analista debe tener un fuerte manejo de personas. Es una analisis situado solo en los requerimientos.
+
+2) Analisis de requisitos
+	Los requisitos son aquellos que el el sistema o solucion debe cumplir. Los requisitos suelen confundirse con los requerimientos pero estos en realidad son un subconjunto extendido de los requisitos.Cuando se hace el analisis de requisitos se desea explicar requisitos sin entrar en requerimientos. Aunque muchis requisitos se derivan directamente de requerimientos, otros surgen de la experiencia del analista. Suelen usarse diversas herramientas de modelado de orientacion a aspectos logicos y de implantacion de sistemas 
+
+3) Analisis de sistemas
+	Se interesa en aquello que requiere ser analizado y busca comprender como se relacionan las cosas tanto materialas como inmateriales que le componen. Los sistemas incorporan tanto requisitos como requerimientos pero no los determinan ni viceversa. Usa diversas herramientas de modelado que reflejen componentes e interacciones.
+
+4) Analisis informatico
+	Se interesa por lo fisico, el hardware de las cosas y su software. Se expresa o incluye o es parte de los requerimientos y se rige por requisitos. Este tipo de analisis se aplica asistemas tecnicos y socio-tecnicos pero no a sistemas humanos. Usa diversas herramientas de modelado con enfasis especifico en temas de implantacion e infraestructura.
+
+5) Ingenieria de Requisitos
+	Alude al conjunto de tareas cuyo fin es hacer que los requisitos conseguidos en el analisis sean lo mas completos, claros y bien definidos posible. Se basa en requerimientos, trabaja sobre sistemas tecnicos casi sin componentes humanos y obviamente entra en detalles informaticos.
+
+
+
+***Tipos de diseño***
+
+El diseño es una fase que pretende responder la pregunta ¿cual es la solucion?, solucion que se representa con detalle y precision en un modelo del sistema que permita ver de que manera se resuelven los problemas del usuario. Basicamente se traducen los requisitos de software a un conjunto de representaciones adecuadas a su posteior programacion.
+Esta etapa representa el puente entre el proceso de especificacion y el diseño, involucra la identificacion de los componentes principales del sistema y su comunicacion.
+Los tipos de diseño son:
+
+1)Diseño arquitectonico
+	Define la relacion entre los principales elementos estructurales  del software, los patrones de diseño que se pueden utilizar y las restricciones que afectan a la manera en que se pueden aplicar los patrones de diseño. El diseño arquitectonico se centra en la representacion de la estructura de los componentes del software, sus propiedades e interacciones. 
+	Pretende estructurar el sistema, esto implica descomponer el sistema en varios subsistemas principales y el identificar la comunicacion entre estos subsistemas. Se establece un modelo de las relaciones de control entre las diferentes partes del sistema y los subsistemas identificados se descomponen en modulos.
+
+	Modelos Arquitectonicos:
+	Modelo estatico estructural
+		Muestra los componentes principales del sistema
+	-Modelo dinamico del proceso
+		Muestra la estructura del proceso del sistema
+	-Modelo de interfaz
+		Define las interfaces de los subsistemas
+	-Modelo de relaciones
+		tales como un modelo de flujo de datos
+
+2)Diseño de datos
+	Transforma el modelo del dominio de informacion que se crea durante el analisis en las estructuras de datos que se necesitaran para implementar el software. El diseño de datos facilita la representacion de los componentes de datos de la arquitectura.
+	El diseño de datos, tambien llamado arquitectura de datos, crea un modelo de datos y/o informacion que se representa con un nivel de abstraccion. Este modelo de datos es refinado en progresivas representaciones especificas de la implementacion.
+	Al nivel de los componentes del sistema, el diseño de la estructura de datos y de los algoritmos asociados requeridos para su manipulacion, son la parte esencial en la creacion de aplicaciones de alta calidad. 
+	Al nivel de aplicacion, la traduccion de un modelo de datos en una base de datos es el punto clave para alcanzar los objetivos de negocio del sistema.
+	Al nivel de negocios, el conjunto de informacion almacenada en diferentes bases de datos facilita la mineria de datos o el descubrimiento de conocimiento que puede influir en el proximo exito de negocio.
+
+
+3)Diseño de interfaz
+	Describe la manera de comunicarse el software dentro de si mismo, con sistemas que interoperan dentro de el y con las personas que lo utilizan.
+	Existen algunos diagramas que sirven para el diseño de interfaz:
+		-Diagrama de Nassi - Schneiderman (N-S)
+			Es una tecnica de especificacion de algoritmos que combina la descripcion textual, propia del pseudocodigo, con la representacion grafica del diagrama de flujo. Cuenta con un conjunto limitado de simbolos para representar los pasos del algoritmo, se apoya en expresiones de lenguaje natural, sin embargo se presta para ambiguedades.
+		-Diagramas de interfaz de usuario
+			Usado para imitar visualmente la interfaz del usuario del sistema usando formas, controle, etiquetas. Estas se organizan en el diagrama para describir su apariencia. Los elementos UI tambien se pueden rastrear a otros elementos de modelo vinculando el UI con la implementacion de base.
+
+
+4)Diseño de componentes
+	Transforma los elementos estructurales de la arquitectura del software en una descripcion procedimental de los componentes de software
+
+
+***2.4 Del diseño del proyecto al diseño de la solucion pasando por el analisis***
+
+La palabra diseño en el contexto de la informatica se refiere a  una fase muy concreta del desarrollo de sistemas, posterior al analisis. Esta fase se caracteriza por la conversion de los requerimientos especificados en el analisis a un lenguaje y a un posterior analisis centrado en la tecnologia a usar. Basicamente se trata de convertir cada requerimiento del analisis en un conjunto de especificaciones tecnicas y tecnologias que permitan al requerimiento ser implementado en un software.
+Por diseño del proyecto se esta aludiendo al proceso intelectual, estrategico, a largo plazo de concebir el proyecto como un medio que no solamente se limite a terminar con un artefacto manufacturado, sino como un proceso donde una organizacion se enriquece de la experiencia del proyecto. Por ejemplo se trata de aprender de errores organizacionales al momento de ejecutar el proyecto, o de probar tecnologias que puede que no sirvan al artefacto a manufacturar pero si permite mejorar otros proyectos.
+El diseño del proyecto es una accion organizacional y no un acto o descicion de un departamento, por eso suelen estar en manos de oficinas de proyectos que posean un nivel al menos medio de madurez.
+En cuanto a un proceso de software, el diseño del proyecto considera que existe, pero no entra en detalles, los cuales deja en manos de los posteriores pasos. El proceso se puede decir es un componente en el diseño del proyecto pero no lo determina ni lo dictamina, pero si el proceso puede enriquecerse del diseño del proyecto, inclusive llegar a incorporarlo.
+El diseño del proyecto analiza todos los escenarios futuros del proyecto en su ejecucion y posterior a su cierre, a si mismo todos los escenarios de uso del artefacto a manufacturar.
+Por lo anterior el diseño del proyecto es la vision del acto proyectual futuro en el presente  y por ello debe organizar  prever escenarios de planificacion, analisis, de implementacion, de codificacion, de despliegue y de diseño informatico del propio proyecto y del artefacto a generar.
+En ingenieria de software manejar esta vision mucho mas amplia de un proyecto, permite enriquecer la vision de los proyectos informaticos y de los proyectos de sistemas.
+
+
+
+||---------------------CAPITULO 3.0---------------------||
+
+ANALISIS ORGANIZACIONAL A TRAVES DEL MODELADO VISUAL DES SUS FACETAS Y DIMENSIONES
+
+***Dimensiones del analisis organizacional***
+
+Al aplicar una metodologia que implemente un ciclo de vida de software especifico se debe tener en cuenta los siguientes factores clave: notacion,herramientas y procesos.
+El analisis organizacional es una metafora acerca de como construir un sistema deseado. Por este motivo es importante el aspecto de notacion o de herramientas de modelamiento que permitan expresar la mayor cantidad de detalles de un sistema con miras de ser construido y para efectos de implementacion.
+No existe un determinado patron o metodologia pero usualmente se distinguen 4 dimensiones esenciales y una especial.
+
+	-Dimension estatica: 
+		Refleja los componentes que no varian en el tiempo o persisten de manera relativa por largo tiempo
+	-Dimension dinamica:
+		Refleja reglas y procesos que rigen la evoluvion de los componentes.
+	-Dimension funcional: 
+		Refleja los contenidos de los procesos de cambio que alteran y afectan a los componentes
+	-Dimension organizacional:
+		Refleja como los componentes se asocian a una organizacion que los acogera.
+	-Dimension interaccion o interfaz
+		La dimension especial, de interaccion o interfaz, no existe en terminos de un modelamiento tradicional o generico, pero en el caso de la informatica resulta relevante: refleja  las diversas interacciones que es necesario representar y que ligan un sistema informatico a su entorno.
+		Existen diversos tipos de interacciones dependiendo el tipo de aplicacion.
+		-Interaccion Humano - Humano
+			Los profesionales de la informatica crean sistemas tecnologicos muy complejos y perfectos, pero olvidan al momento de analizar y diseñarlo que hay componentes humanos imprescindibles que no pueden olvidarse, por ejemplo quien debe apretar el boton de reset cuando se cualega el ordenador.
+			El analisis y diseño no es un tema netamente tecnico, sino organizacional, por este motivo deben pensarse detalles como lo anterior.
+			Existe la creencia de que todas las herramientas de analisis y diseño son para componentes tecnologicos, pero no es asi, se pueden introducir elementos para componentes humanos.
+			Las maquinas son extensiones del hacer y la reflexion humana, por lo tantro si algo se olvida automatizar, algo quedara fuera de las operaciones del sistema.
+
+		-Interaccion Maquina - Maquina
+			Trata de vincular estructurar de informacion de datos entre si para transferir, copiar,mover y operar datos entre otras operaciones. Esto aparece en casos de bases de datos federadas donde los datos se transfieren entre sistemas de bases de datos diferentes estructuras y arquitecturas, sistemas de datos distribuidos donde operan diferentes sistemas operativos y de datos, sistemas web apoyados por estructuras como XML, etc.
+
+		-Interaccion Humano - Maquina
+			Es la interaccion Persona-Ordenador  es un area de estudio centrada en el fenomeno de interaccion entre usuarios y sistemas informaticos, cuyo objetivo es proporcionar bases teoricas, metodologicas y practicas para el diseño y evaluacion de productos interactivos que puedan ser usados de forma eficiente, eficaz, segura y satisfactoria.
+
+	Sintesis
+		En este sentido es necesario conocer:
+			-Las herramientas que usara el sistema: arquitecturas, componentes, bases de datos, pantallas.
+			-Los procesos organizacionales y su vinculacion  con los procesos que surgen de la incorporacion de la tecnologia a estos procesos.
+			-La notacion mas clara y precisa para expresar estas dimensiones.
+		Hay que añadir que cubrir las 5 dimensiones permite dar una mayor completitud a un sistema al momento de ser modelado.
+		La parte compleja de desarrollar las dimensiones proviene de la integracion de la informacion que se recoge en cada una y que sea compatible con todas las dimensiones.
+
+
+***3.1.2 Hacia el modelado visual de las dimensiones***
+
+Es importante utilizar un modelado visual que permita capturar parte esencial del sistema, manejar la complejidad, definir la arquitectura del software, modelar el sistema independiente del lenguaje de implementacion y que promueva la reutilizacion.
+A continuacion se describen brevemente los dos instrumentos mas empleados en la historia del analisis y diseño de sistemas.
+-Analisis estructurado moderno
+	Es un metodo para el analisis de sistemas manuales o automatizados, que conduce al desarrollo de especificaciones para sistemas nuevos o para efectuar modificaciones a los ya existentes. Cuando los analistas abordan una situacion poco familiar , siempre existe una pregunta sobre donde comenzar el analisis.
+	El analisis estructurado permite al analista conocer un sistema o proceso en forma logica y manejable al mismo tiempo que proporciona la base para asegurar que no omite ningun detalle pertinente.
+	El objetivo que persigue el analisis estructurado es organizar las tareas asociadas con la determinacion de requerimientos para obtener la comprension completa y exacta de una situacion dada. A partir de aqui determina los requerimientos que seran la base de un sistema.
+	Este tipo de analisis hace uso de los siguientes componentes
+		-Simbolos graficos en diagramas de flujo de datos, diagramas entidad relacion y diagramas de transicion.
+		-Diccionario de datos
+		-Descripciones de procesos y procedimientos
+		-Reglas
+
+-UML (Unified Modeling Language)
 
 
 
 
+
+
+
+	
 
 
 
