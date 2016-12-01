@@ -954,22 +954,82 @@ A continuacion se describen brevemente los dos instrumentos mas empleados en la 
 
 -UML (Unified Modeling Language)
 
+El modelado visual mas utilizado, combina notaciones provenientes desde: Modelado orientado a objetos, modelado de datosm modelado de componentes y modelado de flujos de trabajo(workflows)
+
+-Diagramas de estructuras
+	*Diagramas de casos de uso
+		Describen bajo la forma de acciones y reacciones el comportamiento de un sistema desde el punto de vista del usuario, permite definir los limites del sistema y las relaciones entre el sistema y el entorno. Son descripciones de la funcionalidad del sistema independientes de la implementacion. Es una tecnica para capturar informacion de como un sistema o negocio trabaja actualmente, o de como se desea que trabaje, es una manera para capturar requisitos.
+	*Diagramas de clases/objetos
+		Es el diagrama principal para el analisis y diseño, presenta las clases y objetos del sistema con sus relaciones estructurales  y de herencia.
+
+-Diagramas de interaccion
+	*Diagrama de secuencia
+		Son los mas adecuados para observar la perspectiva cronologica de las interacciones, muestra la secuencia de mensajes entre objetos durante un escenario concreto.
+	*Diagrama de colaboracion
+		Estos diagramas ofrecen un vision espacial, mostrando los enlaces de comunicacion entre objetos, normalmente el diagrama de colaboracion se obtiene a partir del correspondiente diagrama de secuencia
+
+-Diagrama de comportamiento
+	*Diagrama de actividades
+		Es una variante de los diagramas de estados, organizado respecto de las acciones y principalmente destinado a representar el comportamiento interno de  un metodo, de un caso de uso o de un proceso de negocio
+	*Diagrama de estados
+		Representan automatas de estados finitos, desde el punto de vista de los estados y las transiciones, son utiles solo para objetos con comportamiento significativo, el resto de objetos se puede considerar que tiene un unico estado.
+		Cada objeto esta en un estado encierto instante, el estado esta caracterizado parcialmente por los valores de los atributos del objeto, el estado en el que se encunetra un objeto determina su comportamiento, cada objeto sigue el comportamiento descrito en el diagrama de estados asociado a su clase.
+
+-Diagrama de implementacion
+	*Diagrama de despliegue
+		Muestran la disposicion fisica de los distintos nodos que componen un sistema y el reparto de los componentes sobre dichos nodos.
+	*Diagrama de componentes
+		Describen los elementos fisicos del sistema y sus relaciones, muestran las opciones de realizacion incluyendo codigo fuente, binario y ejecutable. Los componentes representan todos los tipos de elementos software que entran en la creacion de la aplicacion. Pueden ser simples archivos, paquetes de cierto lenguaje, bibliotecas cargadas dinamicamente.
 
 
+DIMENSIONES VS DIAGRAMAS
+
+En este apartado se abordan las diferentes dimensiones de modelamiento que interesa tratar. La intencion es dar una amplia vision de la importancia de la completitud del modelado. Por este motivo se revisan las dimensiones primero frente al Analisis Estructurado Moderno para comenzar viendo la importancia de un modelado balanceado y segundo con UML
+
+3.2.1 Dimensiones vs Analisis Estructurado Moderno
+
+El analisis estructurado moderno es una propuesta avanzada de Yourdon al unificar varias herramientas de modelado que se usaban de manera dispersa o no integrada. Este analisis incluyo las siguientes herramientas:
+	-Diagramas de Flujo de Datos
+	-Diccionario de Datos
+	-Especificacion de Procesos
+	-Diagrama Entidad-Relacion
+	-Diagrama de Transicion de Estados 
+
+Con estos diagramas lo que se desea es:
+	-Que el Diagrama de Flujo de Datos enfoque la atencion del lector en las funciones del sistema, sin permitir que las relaciones entre datos distraigan su atencion.
+	-Que el Diagrama Entidad-Relacion enfoque la atencion en las relaciones entre datos , sin permitir distraccion por las caracteristicas funcionales
+	-Que el diagrama de Transiscion enfoque la atencion en las caracteristicas de tiempo sin la distraccion de las funciones a los datos
+Por su parte, el diccionario de datos y la especificacion de procesos completan la informacion de estos diagramas
+
+Cada una de estas herramientas segun la dimension en que se usa, enfoca un aspecto critico del sistema a modelar. Esto es muy important pues significa que quien lee el modelo a traves de un diagrama se esta enfocando siempre en un solo aspecto critico, es decir el aspecto al cual la herramienta de modelado esta atrayendo su atencion. Como la realidad de un sistema es mayor a la del observador, es claro que el sistema tiene tantos grados de complejidad como enfoques o dimensiones. Estas dimensiones ya conocidas son:
+	-Dimension estatica abordada mediante diagrama entidad-relacion y diccionarios de datos
+	-Dimension funcional abordada mediante diagramas de flujos de datos, especificaciones de procesos y diccionarios de datos
+	-Dimension dinamica abordada mediante diagramas de transicion de estados y diccionarios de datos
+
+La dimension organizacional no queda abordada y la dimension interfaz no aparece cubierta salvo por una relacion simple entre los flujos de datos de la interfaz humano-maquina, donde cada flujo se codifica y se asocia a una pantalla que se representa visualmente.
+
+...
 
 
+3.2.1
+
+...
+
+Balanceo de dimensiones
+
+-Reglas de balanceo entre Diagramas de Flujos de Datos(DFD) y Diccionario de Datos(DD)
+	-Cada flujo de datos y cada almacen de datos deben estar defindos en el diccionario de datos. Si falta la definicion en el diccionario, el flujo o el almacen se considera indefinido.
+	-De manera inversa, cada dato y cada almacen que se define en el diccionario de datos debe aparecer en alguna parte del DFD. Si no aparece, dicho dato o almacen es un "fantasma", es decir algo definido pero que no se usa en el sistema. Esto puede suceder si los datos se definieron para que correspondieran con una version temprana del DFD, el peligro que se corre es que el DFD pudiera cambiarse sin un cambio correspondiente en el diccionario de datos.
+
+-Reglas de balanceo entre Diagrama de Flujo de Datos (DFD) y Especificacion de Procesos (EP)
+	-Cada burbuja del DFD debe asociarse con un DFD de nivel inferior o con una especificacion de proceso, pero no ambos. Si el DFD muestra una burbuja que se identifica como 1.4.2 debe existir ya sea una figura correspondiente identificada como 1.4.2 cuyas burbujas se identifiquen como 1.4.2.1, 1.4.2.2 , etc. O bine la especificacion estructurada debe contener una especificacion de prooceso para la burbuja 1.4.2, si ambas existen el modelo es innecesario y redundante.
+	-Cada especificacion de proceso debe tenert una burbuja de nivel inferior asociada en el DFD. Dado que la especificacion del proceso requiere de mucho trabajo, podria pensarse que es altamente improbable que existan especificaciones de proceso "vagabundas" rondando por el sistema. Pero puede suceder, las especificaciones del proceso pudieran haberse escrito para una version preliminar del DFD, tras lo cual un proceso de revision pudo eliminarl algunas de las burbujas del DFD.
+	-Las entradas y salidad deben coincidir. El DFD muestr flujos de entrada y salida para cada burbuja. Esto debe ser evidente en la especificacion de proceso tambien, asi que se espera una declaracion READ( GET,INPUT,etc) a cada flujo de entrada y WRITE (PUT, DISPLAY,etc) para cada flujo de salida.
 
 
-	
+.... Reglas de Balanceo  libro tema 3.2.1
 
-
-
-
-
-
-
-
-
+***Dimensiones vs UML
 
 
 
